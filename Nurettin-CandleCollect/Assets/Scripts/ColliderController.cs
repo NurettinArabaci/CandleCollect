@@ -19,19 +19,16 @@ public class ColliderController : MonoBehaviour
         {             
             CollectCandle();
             Destroy(other.gameObject);
+            
         }
-        else if (other.tag == "ObstacleGround")
-        {
-            TakeDamage();
-            other.transform.GetComponent<BoxCollider>().isTrigger = false; // tekrar çarpma kontrolu
-        }
+
     }
 
 
     public void TakeDamage()
     {
         scoreAmount--;
-        SpeedControl();
+        GameOver();
 
         transform.GetChild(scoreAmount+1).gameObject.SetActive(false);
         transform.GetChild(0).transform.position -= new Vector3(0, 0.8f, 0);
@@ -54,13 +51,18 @@ public class ColliderController : MonoBehaviour
 
     }
 
-    public void SpeedControl()
+    public void GameOver()
     {
         if (scoreAmount<=0)
         {
             PlayerMovement.speed = 0;
             PlayerMovement.xSpeed = 0;
+
+            Debug.Log("GameOver");
             transform.GetChild(0).gameObject.SetActive(false);
         }
     }
+
+
+    
 }

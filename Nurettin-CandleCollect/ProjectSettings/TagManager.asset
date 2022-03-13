@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Collactable
-  - ObstacleGround
+  - Cake
   layers:
   - Default
   - TransparentFX
