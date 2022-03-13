@@ -31,16 +31,36 @@ public class ColliderController : MonoBehaviour
     public void TakeDamage()
     {
         scoreAmount--;
+        SpeedControl();
+
         transform.GetChild(scoreAmount+1).gameObject.SetActive(false);
-        transform.GetChild(0).transform.position -= new Vector3(0, 0.4f, 0);
+        transform.GetChild(0).transform.position -= new Vector3(0, 0.8f, 0);
+
         Debug.Log(scoreAmount);
     }
 
     public void CollectCandle()
     {
-        scoreAmount++;
-        transform.GetChild(scoreAmount).gameObject.SetActive(true);
-        transform.GetChild(0).transform.position += new Vector3(0, 0.4f, 0);
+        if (scoreAmount<11)
+        {
+            scoreAmount++;
+            transform.GetChild(scoreAmount).gameObject.SetActive(true);
+            transform.GetChild(0).transform.position += new Vector3(0, 0.8f, 0);
+
+           
+        }
         Debug.Log(scoreAmount);
+
+
+    }
+
+    public void SpeedControl()
+    {
+        if (scoreAmount<=0)
+        {
+            PlayerMovement.speed = 0;
+            PlayerMovement.xSpeed = 0;
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
     }
 }
