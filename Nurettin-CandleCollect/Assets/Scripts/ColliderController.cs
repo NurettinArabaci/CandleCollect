@@ -13,5 +13,10 @@ public class ColliderController : MonoBehaviour
             scoreAmount--;
             Debug.Log(scoreAmount);
         }
+        else if (other.tag == "Collactable")
+        {
+            scoreAmount++;
+            Debug.Log(scoreAmount);
+        }
     }
 }
