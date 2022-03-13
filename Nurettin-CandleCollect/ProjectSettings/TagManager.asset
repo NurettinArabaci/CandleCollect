@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Collactable
+  - ObstacleGround
   layers:
   - Default
   - TransparentFX

@@ -11,27 +11,36 @@ public class ColliderController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag=="Obstacle")
-        {
-            scoreAmount--;
-            Debug.Log(scoreAmount);
+        { 
             TakeDamage();
+            Destroy(other.gameObject);
         }
         else if (other.tag == "Collactable")
-        {
-            scoreAmount++;
-            Debug.Log(scoreAmount);
+        {             
             CollectCandle();
+            Destroy(other.gameObject);
+        }
+        else if (other.tag == "ObstacleGround")
+        {
+            TakeDamage();
+            other.transform.GetComponent<BoxCollider>().isTrigger = false; // tekrar çarpma kontrolu
         }
     }
 
 
     public void TakeDamage()
     {
-        transform.GetChild(scoreAmount).gameObject.SetActive(false);
+        scoreAmount--;
+        transform.GetChild(scoreAmount+1).gameObject.SetActive(false);
+        transform.GetChild(0).transform.position -= new Vector3(0, 0.4f, 0);
+        Debug.Log(scoreAmount);
     }
 
     public void CollectCandle()
     {
-        transform.GetChild(scoreAmount-1).gameObject.SetActive(true);
+        scoreAmount++;
+        transform.GetChild(scoreAmount).gameObject.SetActive(true);
+        transform.GetChild(0).transform.position += new Vector3(0, 0.4f, 0);
+        Debug.Log(scoreAmount);
     }
 }
