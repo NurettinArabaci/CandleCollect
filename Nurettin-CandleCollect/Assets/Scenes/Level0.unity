@@ -183,14 +183,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1 &97835929
@@ -203,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97835930}
   m_Layer: 0
-  m_Name: Collactables
+  m_Name: Collectables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,14 +290,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -638,14 +622,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1 &322877360
@@ -903,14 +879,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1 &491696283
@@ -1109,7 +1077,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 572473017}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1468889760}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: NextLevelButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &572473017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,14 +1330,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -1692,14 +1664,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1001 &885473928
@@ -1757,14 +1721,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1001 &896674887
@@ -1821,14 +1777,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -1919,6 +1867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fa07a1245694340a29a0f1794f23c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartButton: {fileID: 2001042687}
 --- !u!95 &897961743
 Animator:
   serializedVersion: 3
@@ -1952,6 +1901,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vCamOne: {fileID: 2105012308}
   vCamTwo: {fileID: 1229039037}
+  startButton: {fileID: 1719961376}
+  failedButton: {fileID: 2001042687}
+  completedButton: {fileID: 572473016}
 --- !u!1 &923161111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,14 +2271,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1 &1007755112
@@ -2462,14 +2406,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -3251,6 +3187,7 @@ GameObject:
   - component: {fileID: 1468889758}
   - component: {fileID: 1468889757}
   - component: {fileID: 1468889756}
+  - component: {fileID: 1468889760}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: Untagged
@@ -3341,6 +3278,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1468889760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468889755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3768225babe4bd18cb7e1bd16bc3e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1471988685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7281774774809664177, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -3477,14 +3426,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -3640,14 +3581,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollactableCandle (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
 --- !u!1 &1594376710
@@ -3799,14 +3732,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -4035,7 +3960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1719961375
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4099,7 +4024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719961377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1468889760}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719961377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4202,14 +4139,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -4400,7 +4329,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2001042688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1468889760}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RestartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2001042688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4503,14 +4444,6 @@ PrefabInstance:
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
       value: CollactableCandle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
@@ -5130,15 +5063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_Name
-      value: CollactableCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774809664205, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281774774855359840, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: CollectableCandle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18accb65961d94b0890b10b8c1076195, type: 3}

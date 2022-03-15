@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColliderController : MonoBehaviour
 {
 
     public static int scoreAmount = 1;
 
+    [SerializeField] Button restartButton;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,7 +17,7 @@ public class ColliderController : MonoBehaviour
             TakeDamage();
             Destroy(other.gameObject);
         }
-        else if (other.tag == "Collactable")
+        else if (other.tag == "Collectable")
         {             
             CollectCandle();
             Destroy(other.gameObject);
@@ -58,7 +60,7 @@ public class ColliderController : MonoBehaviour
             PlayerMovement.speed = 0;
             PlayerMovement.xSpeed = 0;
 
-            Debug.Log("GameOver");
+            restartButton.gameObject.SetActive(true);
             transform.GetChild(0).gameObject.SetActive(false);
         }
     }

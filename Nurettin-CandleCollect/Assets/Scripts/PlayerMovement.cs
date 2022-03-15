@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static float speed = 10;
-    public static float xSpeed = 10f;
+    public static float speed = 0;
+    public static float xSpeed = 0f;
     float limitX = 3.5f;
 
     float mouseX = 0;
