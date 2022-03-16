@@ -7,14 +7,16 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     Button playBut;
-    Button restartBut;
-    Button nextLevelBut;
+    public static Button restartBut;
+    public static Button nextLevelBut;
+
+    public static GameManager Instance { get; private set; }
+
 
     private void Awake()
     {
-        playBut = transform.GetChild(0).GetComponent<Button>();
-        restartBut = transform.GetChild(1).GetComponent<Button>();
-        nextLevelBut = transform.GetChild(2).GetComponent<Button>();
+
+        ButtonReference();
     }
 
     public void PlayButton()
@@ -36,5 +38,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);//next level gelecek
         nextLevelBut.gameObject.SetActive(false);
 
+    }
+
+    void ButtonReference()
+    {
+        playBut = transform.GetChild(0).GetComponent<Button>();
+        restartBut = transform.GetChild(1).GetComponent<Button>();
+        nextLevelBut = transform.GetChild(2).GetComponent<Button>();
     }
 }

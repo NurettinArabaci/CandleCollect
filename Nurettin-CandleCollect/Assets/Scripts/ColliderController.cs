@@ -8,14 +8,20 @@ public class ColliderController : MonoBehaviour
 
     public static int scoreAmount = 1;
 
-    [SerializeField] Button restartButton;
+    Button restartButton;
+
+    private void Start()
+    {
+        scoreAmount = 1;
+        restartButton = GameManager.restartBut;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag=="Obstacle")
-        { 
+        {
             TakeDamage();
-            Destroy(other.gameObject);
+            other.gameObject.tag = "Untagged";
         }
         else if (other.tag == "Collectable")
         {             
@@ -25,8 +31,7 @@ public class ColliderController : MonoBehaviour
         }
 
     }
-
-
+    
     public void TakeDamage()
     {
         scoreAmount--;

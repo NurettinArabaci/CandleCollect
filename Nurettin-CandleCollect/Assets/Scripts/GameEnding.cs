@@ -8,11 +8,16 @@ public class GameEnding : MonoBehaviour
 {
     public CinemachineVirtualCameraBase vCamOne;
     public CinemachineVirtualCameraBase vCamTwo;
+    public GameObject particleSys;
 
-    public Button startButton;
-    public Button failedButton;
-    public Button completedButton;
-    
+    Button completedButton;
+
+    private void Start()
+    {
+        completedButton = GameManager.nextLevelBut;
+        vCamTwo.m_Priority = 9;
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,10 +31,10 @@ public class GameEnding : MonoBehaviour
             PlayerMovement.speed = 0;
             PlayerMovement.xSpeed = 0;
             completedButton.gameObject.SetActive(true);
-
-
+            particleSys.SetActive(true);
         }
     }
+ 
     public void GameEnd()
     {
         transform.GetComponent<Animator>().enabled = true;
