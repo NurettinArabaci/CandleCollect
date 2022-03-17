@@ -7,6 +7,6 @@ public class CutterRotate : MonoBehaviour
    
     void Update()
     {
-        transform.Rotate(0,0, 0.5f);
+        transform.Rotate(0,0, 3f);
     }
 }

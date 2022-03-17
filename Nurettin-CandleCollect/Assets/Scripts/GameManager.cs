@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
     public void PlayButton()
     {
         playBut.gameObject.SetActive(false);
-        PlayerMovement.speed = 10;
-        PlayerMovement.xSpeed = 10;
+        PlayerMovement.speed = 13;
+        PlayerMovement.xSpeed = 1;
     }
 
     public void RestartButton()
