@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameEnding : MonoBehaviour
 {
@@ -37,10 +38,17 @@ public class GameEnding : MonoBehaviour
  
     public void GameEnd()
     {
-        transform.GetComponent<Animator>().enabled = true;
-        transform.GetComponent<Animator>().SetBool("finish", true);
+        //transform.GetComponent<Animator>().enabled = true;
+        //transform.GetComponent<Animator>().SetBool("finish", true);
+        transform.DOMove(new Vector3(0, 14.5f, 237f),1.4f);
+        Invoke(nameof(EndMovement), 1.4f);
         vCamOne.GetComponent<CameraController>().enabled = false;
         vCamTwo.m_Priority = 11;
         
+    }
+
+    void EndMovement()
+    {
+        transform.DOMove(new Vector3(0, 13.8f, 240f), 0.6f);
     }
 }

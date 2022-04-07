@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45125705, g: 0.50095266, b: 0.5734589, a: 1}
+  m_IndirectSpecularColor: {r: 0.45125622, g: 0.5009517, b: 0.5734573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,7 +178,7 @@ Transform:
   - {fileID: 2106674898}
   - {fileID: 1431305291}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &170781563
 PrefabInstance:
@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 220988098}
   - component: {fileID: 220988101}
   - component: {fileID: 220988100}
-  - component: {fileID: 220988099}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -377,20 +376,6 @@ Transform:
   m_Father: {fileID: 407155472}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &220988099
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220988097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &220988100
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1048,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281774774809664177, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 195.56
+      value: 190.22
       objectReference: {fileID: 0}
     - target: {fileID: 7281774774809664177, guid: 18accb65961d94b0890b10b8c1076195, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2095,7 +2080,7 @@ Transform:
   - {fileID: 324513230}
   - {fileID: 1467222843}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &897961740
 MonoBehaviour:
@@ -2595,7 +2580,7 @@ Transform:
   - {fileID: 785405619}
   - {fileID: 1143015049}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1007755112
 GameObject:
@@ -2867,7 +2852,7 @@ Transform:
   - {fileID: 407155472}
   - {fileID: 1502087213}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1170072468 stripped
 Transform:
@@ -3625,7 +3610,7 @@ RectTransform:
   - {fileID: 2001042686}
   - {fileID: 572473015}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3750,7 +3735,7 @@ Transform:
   - {fileID: 2105012309}
   - {fileID: 1229039038}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562803971
 GameObject:
@@ -4031,7 +4016,7 @@ Transform:
   - {fileID: 923161114}
   - {fileID: 51476383}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639903779
 GameObject:
@@ -4125,7 +4110,6 @@ GameObject:
   - component: {fileID: 1685886016}
   - component: {fileID: 1685886019}
   - component: {fileID: 1685886018}
-  - component: {fileID: 1685886017}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -4147,20 +4131,6 @@ Transform:
   m_Father: {fileID: 407155472}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1685886017
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685886015}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1685886018
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5148,7 +5118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1920933453557429780, guid: 2db9ae0bc48964bb78acbc5605efb7ba, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1920933453557429780, guid: 2db9ae0bc48964bb78acbc5605efb7ba, type: 3}
       propertyPath: m_LocalPosition.x

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         playBut.gameObject.SetActive(false);
         PlayerMovement.speed = 13;
-        PlayerMovement.xSpeed = 1;
+        PlayerMovement.xSpeed = 4;
     }
 
     public void RestartButton()
