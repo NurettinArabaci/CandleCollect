@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ColliderController : MonoBehaviour
 {
@@ -37,10 +38,8 @@ public class ColliderController : MonoBehaviour
         scoreAmount--;
         GameOver();
 
-        transform.GetChild(scoreAmount+1).gameObject.SetActive(false);
-        transform.GetChild(0).transform.position -= new Vector3(0, 0.8f, 0);
-
-        Debug.Log(scoreAmount);
+        transform.GetChild(0).DOMoveY(transform.GetChild(0).transform.position.y - 0.8f, 0.5f);
+        transform.GetChild(1).DOScaleY(transform.GetChild(1).transform.localScale.y - 1, 0.5f);
     }
 
     public void CollectCandle()
@@ -48,10 +47,8 @@ public class ColliderController : MonoBehaviour
         if (scoreAmount<11)
         {
             scoreAmount++;
-            transform.GetChild(scoreAmount).gameObject.SetActive(true);
-            transform.GetChild(0).transform.position += new Vector3(0, 0.8f, 0);
-
-           
+            transform.GetChild(1).DOScaleY(transform.GetChild(1).transform.localScale.y+ 1, 0.5f);
+            transform.GetChild(0).DOMoveY(transform.GetChild(0).transform.position.y+0.8f, 0.5f);
         }
         Debug.Log(scoreAmount);
 
